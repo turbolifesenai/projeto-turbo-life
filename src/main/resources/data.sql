@@ -2,7 +2,7 @@
 -- INSERÇÃO DE MARCAS (CATEGORIAS)
 -- ==================================================================================
 
-INSERT IGNORE INTO tb_marcas (id, nome, paisDeOrigem, logoUrl) VALUES (1, 'Volkswagen', 'Alemanha', 'https://www.pngall.com/wp-content/uploads/15/Volkswagen-VW-Logo-PNG-Clipart.png');
+INSERT IGNORE INTO tb_marcas (id, nome, paisDeOrigem, logoUrl) VALUES (1, 'Volkswaagen', 'Alemanha', 'https://www.pngall.com/wp-content/uploads/15/Volkswagen-VW-Logo-PNG-Clipart.png');
 INSERT IGNORE INTO tb_marcas (id, nome, paisDeOrigem, logoUrl) VALUES (2, 'Toyota', 'Japão', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Toyota_Symbol.svg/2560px-Toyota_Symbol.svg.png');
 INSERT IGNORE INTO tb_marcas (id, nome, paisDeOrigem, logoUrl) VALUES (3, 'Ford', 'EUA', 'https://images.seeklogo.com/logo-png/5/2/ford-logo-png_seeklogo-56586.png');
 INSERT IGNORE INTO tb_marcas (id, nome, paisDeOrigem, logoUrl) VALUES (4, 'Honda', 'Japão', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/2115px-Honda.svg.png');
