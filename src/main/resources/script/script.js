@@ -1,17 +1,15 @@
-function adicionar() {
+const openModalBtn = document.getElementById("openModalBtn");
+const myModal = document.getElementById("myModal");
+const closeBtn = document.querySelector(".closeBtn");
 
-    const carro = {
-        modelo: document.getElementById("modelo").value,
-        ano: document.getElementById("ano").value,
-        porte: document.getElementById("porte").value,
-        descricao: document.getElementById("descricao").value,
-        capaUrl: document.getElementById("capaUrl").value,
-        id: document.getElementById("paisOrigem").value
-
-    }
+openModalBtn.onclick = function () {
+    myModal.style.display = "block";
 };
-
-fetch("http://localhost:8080/api/carros", {
-    method: "POST",
-    headers {content}
-})
+closeBtn.onclick = function () {
+    myModal.style.display = "none";
+};
+window.onclick = function (event) {
+    if (event.target == myModal) {
+        myModal.style.display = "none";
+    }
+}

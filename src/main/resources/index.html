@@ -3,26 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turbo Life</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <header class="turbo">
-        <img class="logo" src="img/turbo.png" alt="Logo">
-        <button class="btn" onclick="abrirCatalogo()">Adicionar Carro</button>
-    </header>
+    
+    <header>
+    <img class="logo" src="img/turbo.png" alt="Logo">
+     <button id="openModalBtn">Conselho</button>
 
-<main class="content">
-        <div id="carroList" class="grid-container"> </div>
-    </main>
-
-    <div id="formModal" class="modal hidden">
-        <div class="modal-card">
-            <h2>Cadastro Carro</h2>
-            <form id="carroForm">
-                <label>Modelo</label>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn"></span>
+            <div id="cabeca-modal">
+                <label>Modelo:</label>
                 <input type="text" id="nome" required placeholder="Corolla">
 
-                <label>ano</label>
+                <label>Ano:</label>
                 <input type="text" id="ano" required placeholder="2001">
                 
                 <label>Porte</label>
@@ -31,7 +28,7 @@
                     <button onclick="abrirModalCarro()">+</button>
                 </div>
 
-                <label>Descrição</label>
+                <label>Descrição:</label>
                     <input type="text" id="descricao" required placeholder="Informações do veiculo">
 
                 <label>capaUrl</label>
@@ -41,17 +38,12 @@
                     <button type="button" class="btn primary" onclick="salvarMarca()">Adicionar</button>
                     <button type="button" class="btn" onclick="fecharCatalogo()">Cancelar</button>
                 </div>
-            </form>
+
+            </div>
         </div>
     </div>
+    </header>
 
-    <footer>
-        <h1>Desenvolvido por:</h1>
-    </footer>
-
-    <section id="carro" class="carro"></section>
-
-    <script src="script.js"></script>
-    <script>catalogar()</script>
+    <script src="script/script.js"></script>
 </body>
 </html>
