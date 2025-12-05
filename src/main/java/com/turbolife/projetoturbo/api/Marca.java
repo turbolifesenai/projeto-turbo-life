@@ -1,4 +1,4 @@
-package com.turbolife.projetoturbo.api.entities;
+package com.turbolife.projetoturbo.api;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
