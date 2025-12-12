@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Marcas</title>
+    <link rel="stylesheet" href="marcaStyle.css">
+</head>
+<body>
+
+<header class="barra-topo">
+    <div class="logo">Turbo Life</div>
+    <input  type="text" id="pesquisa" placeholder="Buscar por modelo ou Id" class="barra-pesquisa" oninput="filtrarCarros()">
+    <button class="btn primario" onclick="abrirModal()">Adicionar Marca</button>
+
+</header>
+
+<div id="listaMarcas" class="grid-cards"></div>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+
+        <h2 id="tituloModal">Cadastrar Marca</h2>
+
+        <form id="formCadastro" onsubmit="salvarMarca(event)">
+            <input type="hidden" id="marcaId">
+
+            <label>Nome da Marca</label>
+            <input type="text" id="nome" required>
+
+            <label>URL da imagem</label>
+            <input type="text" id="capaUrl">
+s
+            <button type="submit" class="btn primario">Salvar</button>
+        </form>
+    </div>
+</div>
+
+<footer class="foot">Feito por: Turbo Life</footer>
+
+<script src="marca.js"></script>
+
+</body>
+</html>
