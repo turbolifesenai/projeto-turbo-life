@@ -2,21 +2,12 @@
 -- INSERÇÃO DE MARCAS (CATEGORIAS)
 -- ==================================================================================
 
-<<<<<<< HEAD
-INSERT IGNORE INTO tb_marcas ( nome, pais_de_origem, logo_url) VALUES ( 'Volkswagen', 'Alemanha', 'https://www.pngall.com/wp-content/uploads/15/Volkswagen-VW-Logo-PNG-Clipart.png');
-INSERT IGNORE INTO tb_marcas ( nome, pais_de_origem, logo_url) VALUES ( 'Toyota', 'Japão', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Toyota_Symbol.svg/2560px-Toyota_Symbol.svg.png');
-INSERT IGNORE INTO tb_marcas ( nome, pais_de_origem, logo_url) VALUES ( 'Ford', 'EUA', 'https://images.seeklogo.com/logo-png/5/2/ford-logo-png_seeklogo-56586.png');
-INSERT IGNORE INTO tb_marcas ( nome, pais_de_origem, logo_url) VALUES ( 'Honda', 'Japão', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/2115px-Honda.svg.png');
-INSERT IGNORE INTO tb_marcas ( nome, pais_de_origem, logo_url) VALUES ( 'Hyundai', 'Coreia do Sul', 'https://1000logos.net/wp-content/uploads/2018/04/Hyundai-Logo-1990.png');
-INSERT IGNORE INTO tb_marcas ( nome, pais_de_origem, logo_url) VALUES ( 'Porsche', 'Alemanha', 'https://upload.wikimedia.org/wikipedia/de/thumb/7/70/Porsche_Logo.svg/960px-Porsche_Logo.svg.png');
-=======
 INSERT IGNORE INTO tb_marcas (id, nome, pais_de_origem, logo_url) VALUES (1, 'Volkswagen', 'Alemanha', 'https://www.pngall.com/wp-content/uploads/15/Volkswagen-VW-Logo-PNG-Clipart.png');
 INSERT IGNORE INTO tb_marcas (id, nome, pais_de_origem, logo_url) VALUES (2, 'Toyota', 'Japão', 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Toyota_Symbol.svg/2560px-Toyota_Symbol.svg.png');
 INSERT IGNORE INTO tb_marcas (id, nome, pais_de_origem, logo_url) VALUES (3, 'Ford', 'EUA', 'https://images.seeklogo.com/logo-png/5/2/ford-logo-png_seeklogo-56586.png');
 INSERT IGNORE INTO tb_marcas (id, nome, pais_de_origem, logo_url) VALUES (4, 'Honda', 'Japão', 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Honda.svg/2115px-Honda.svg.png');
 INSERT IGNORE INTO tb_marcas (id, nome, pais_de_origem, logo_url) VALUES (5, 'Hyundai', 'Coreia do Sul', 'https://1000logos.net/wp-content/uploads/2018/04/Hyundai-Logo-1990.png');
 INSERT IGNORE INTO tb_marcas (id, nome, pais_de_origem, logo_url) VALUES (6, 'Porsche', 'Alemanha', 'https://upload.wikimedia.org/wikipedia/de/thumb/7/70/Porsche_Logo.svg/960px-Porsche_Logo.svg.png');
->>>>>>> 7050888972423b7e0e754f89a50483e2552eba81
 
 -- ==================================================================================
 -- INSERÇÃO DE CARROS
