@@ -1,0 +1,56 @@
+body {
+    background-image: url(../img/turboFilme.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.btn {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: red;
+    margin-left: 610px;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+}
+
+.btn-carro {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: red;
+    height: 50px;
+    width: 150px;
+    text-align: center;
+}
+
+.center {
+    margin-top: 280px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+.img {
+    width: 50px;
+}
+
+.red{
+    color: rgb(242, 0, 0);
+}
+
+.welcome{
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 280px;
+}
