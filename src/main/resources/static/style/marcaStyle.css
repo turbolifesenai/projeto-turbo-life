@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #0b0b0dfa;
+    background: #0b0b0de4;
     color: #fff;
 }
 
@@ -34,7 +34,7 @@ body {
     color: #fff;
     outline: none;
     transition: .2s;
-    margin-left: 1300px;
+    margin-left: 900px;
 }
 
 .barra-pesquisa:focus {
@@ -129,7 +129,7 @@ body {
 .foot {
     text-align: center;
     padding: 15px;
-    margin-top: 700px;
+    margin-top: 550px;
 }
 
 @media (max-width: 600px) {
@@ -180,4 +180,4 @@ body {
     .grid-cards {
         justify-content: center;
     }
-}   
+}
