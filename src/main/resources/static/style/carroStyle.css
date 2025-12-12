@@ -50,6 +50,7 @@ body {
     cursor: pointer;
     font-weight: 600;
     transition: .2s;
+	background-color: red;
 }
 
 .primario {
