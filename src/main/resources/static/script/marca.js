@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5093/api/marca";
+const API_URL = "http://localhost:8080/api/marcas";
 
 let idEdicao = null;
 let listaCompletaMarcas = [];
@@ -28,7 +28,7 @@ function exibirMarcas(marcas) {
     marcas.forEach((marca) => {
         lista.innerHTML += `
             <div class="card-carro">
-                <img src="${marca.capaUrl || 'https://via.placeholder.com/250'}" class="img-carro">
+                <img src="${marca.logoUrl || 'https://via.placeholder.com/250'}" class="img-carro">
 
                 <h3>${marca.nome}</h3>
 
@@ -56,9 +56,10 @@ async function salvarMarca(event) {
     event.preventDefault();
 
     const nome = document.getElementById("nome").value;
-    const capaUrl = document.getElementById("capaUrl").value;
+    const paisDeOrigem = document.getElementById("paisDeOrigem").value;
+    const logoUrl = document.getElementById("capaUrl").value;
 
-    const marca = { nome, capaUrl };
+    const marca = { nome,logoUrl, paisDeOrigem};
 
     if (idEdicao) {
         await fetch(`${API_URL}/${idEdicao}`, {
