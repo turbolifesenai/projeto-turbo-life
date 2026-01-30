@@ -1,10 +1,16 @@
 package com.turbolife.projetoturbo.api.entities;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 
@@ -26,6 +32,10 @@ public class Marca {
 	
 	@Column(name = "logo_url")
 	private String logoUrl;
+	
+	@JsonIgnore // Evita loop infinito ao transformar em JSON
+    @OneToMany(mappedBy = "marca") // "marca" refere-se ao nome do atributo na classe Carro
+    private List<Carro> carros = new ArrayList<>();
 
 	public Long getId() {
 		return id;
@@ -59,5 +69,14 @@ public class Marca {
 		this.logoUrl = logoUrl;
 	}
 	
-	
+	// Getter e Setter para a lista
+    public List<Carro> getCarros() {
+        return carros;
+    }
+
+    public void setCarros(List<Carro> carros) {
+        this.carros = carros;
+    }
 }
+	
+

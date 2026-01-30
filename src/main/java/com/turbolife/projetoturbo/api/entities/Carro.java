@@ -43,12 +43,13 @@ public class Carro {
 
     public Carro() {}
 
-    public Carro(Long id, String modelo, String porte, Integer anoLancamento, String descricao, String capaUrl) {
+    public Carro(Long id, String modelo, String porte, Integer anoLancamento, String descricao, Marca marca, String capaUrl) {
         this.id = id;
         this.modelo = modelo;
         this.porte = porte;
         this.anoLancamento = anoLancamento;
         this.descricao = descricao;
+        this.marca = marca;
         this.capaUrl = capaUrl;
  
     }
@@ -93,6 +94,14 @@ public class Carro {
 
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+	
+	public Marca getMarca() {
+		return marca;
+	}
+	
+	public void setMarca (Marca marca) {
+		this.marca = marca;
 	}
 	
 	public String getCapaUrl() {
