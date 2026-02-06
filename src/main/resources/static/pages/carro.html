@@ -2,14 +2,38 @@
 <html lang="pt-BR">
 <head>
     <meta charset="utf-8">
-    <title>Carros</title>
+    <title>Carros - Turbo Life</title>
     <link rel="stylesheet" href="../style/carroStyle.css">
+    
+    <style>
+        .modal-content {
+            max-height: 90vh; /* Limita a altura a 90% da tela */
+            overflow-y: auto; /* Cria barra de rolagem se o formulário for grande */
+        }
+        /* Ajuste para inputs ficarem uniformes */
+        .modal-content input, .modal-content select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            background: #242429;
+            border: none;
+            color: white;
+        }
+        .fechar {
+            font-size: 28px;
+            cursor: pointer;
+            color: #ff3b3b;
+        }
+    </style>
 </head>
 <body>
 
 <header class="barra-topo">
     <div class="logo">Turbo <span class="red">Life</span></div>
-    <input  type="text" id="pesquisa" placeholder="Buscar por modelo ou Id" class="barra-pesquisa" oninput="filtrarCarros()">
+    
+    <input type="text" id="pesquisa" placeholder="Buscar por modelo..." class="barra-pesquisa" oninput="filtrarCarros()">
+    
     <button class="btn primario" onclick="abrirModal()">Adicionar Carro</button>
 </header>
     
@@ -17,34 +41,42 @@
 
 <div id="modal" class="modal">
     <div class="modal-content">
-        <span class="fechar" onclick="fecharModal()">&times;</span>
-
-        <h2 id="tituloModal">Cadastrar Carro</h2>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+            <h2 id="tituloModal">Cadastrar Carro</h2>
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+        </div>
 
         <form id="formCadastro" onsubmit="salvarCarro(event)">
             <input type="hidden" id="carroId">
 
+            <label>Marca</label>
+            <select id="marcaId" required>
+                <option value="">Carregando marcas...</option>
+            </select>
+
             <label>Modelo</label>
-            <input type="text" id="modelo" required placeholder="Corolla">
+            <input type="text" id="modelo" required placeholder="Ex: Corolla">
 
             <label>Porte</label>
             <select id="porte" required>
                 <option value="">Selecione...</option>
-                <option>Pequeno</option>
-                <option>Médio</option>
-                <option>Grande</option>
+                <option value="PEQUENO">Pequeno</option>
+                <option value="MEDIO">Médio</option>
+                <option value="GRANDE">Grande</option>
             </select>
 
             <label>Ano</label>
-            <input type="number" id="ano" placeholder="2018">
+            <input type="number" id="ano" placeholder="Ex: 2024" required>
 
             <label>Descrição</label>
-            <input type="text" id="descricao" placeholder="Descrição">
+            <input type="text" id="descricao" placeholder="Detalhes do carro">
 
-            <label>URL da imagem</label>
-            <input type="text" id="capaUrl" placeholder="http://Exemplo.com.br">
+            <label>URL da Imagem</label>
+            <input type="text" id="capaUrl" placeholder="http://exemplo.com/foto.jpg">
 
-            <button type="submit" class="btn primario">Salvar</button>
+            <button type="submit" class="btn primario" style="width: 100%; margin-top: 15px; padding: 12px; font-size: 16px;">
+                Salvar Carro
+            </button>
         </form>
     </div>
 </div>

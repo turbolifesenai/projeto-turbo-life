@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,7 +50,6 @@ body {
     cursor: pointer;
     font-weight: 600;
     transition: .2s;
-	background-color: red;
 }
 
 .primario {
@@ -181,8 +180,25 @@ body {
     .grid-cards {
         justify-content: center;
     }
-}
+}   
 
 .red{
-	color: red;
+    color: red;
+}
+.btn.excluir{
+    background-color: red;
+}
+.btn.editar{
+    background-color: red;
+}
+.modal-content {
+    background: #1c1c20;
+    padding: 25px;
+    border-radius: 15px;
+    width: 95%;
+    max-width: 380px;
+    
+    /* ADICIONE ESTAS 2 LINHAS PARA O BOTÃO APARECER SE A TELA FOR PEQUENA */
+    max-height: 90vh; /* Limita a altura a 90% da tela */
+    overflow-y: auto; /* Cria barra de rolagem se necessário */
 }
